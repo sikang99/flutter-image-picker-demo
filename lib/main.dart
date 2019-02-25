@@ -2,8 +2,13 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'image_picker_channel.dart';
+import 'package:flutter/foundation.dart' show debugDefaultTargetPlatformOverride; // for desktop embedder
 
-void main() => runApp(new MyApp());
+void main() {
+    debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia; // for desktop embedder
+    runApp(new MyApp());
+}
+
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
