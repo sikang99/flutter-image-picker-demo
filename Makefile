@@ -34,7 +34,7 @@ git g:
 	@echo ""
 
 git-update gu:
-	git add *.md *.png Makefile lib/ android/ ios .vscode/
+	git add *.md Makefile *.yaml lib/ android/ ios .vscode/ build/
 	git commit -m "initial update commit"
 	git push -u origin master 
 
